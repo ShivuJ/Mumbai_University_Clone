@@ -1,0 +1,87 @@
+html {
+    display: contents;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+}
+
+.navbar {
+    background-color: #002147;
+    margin: -1% -1% 1% -1%;
+    text-align: center;
+    height: 45px;
+}
+
+nav {
+    display: inline-block;
+    margin: 0% -1% 0% -1%;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul a {
+    text-decoration: none;
+    color: #d0d6dd;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fcb900;
+}
+
+main {
+    margin: 0 10px;
+}
+
+.blink1 {
+    color: yellow;
+    animation: blinker 1.5s linear infinite;
+}
+
+.header_row1 {
+    padding: 15px 0;
+}
+
+img {
+    width: 15px;
+}
+
+.contact_no,
+.social img {
+    color: #444444;
+}
+
+.social,
+.contact_header {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.social_header {
+    float: right;
+    margin: 0;
+}
+
+.facebook,
+.twitter,
+.linkedin,
+.youtube {
+    padding: 2px;
+}
+
+main {
+    margin: 0 37px;
+}
+
+#universityLogo {
+    width: 200px !important;
+}
