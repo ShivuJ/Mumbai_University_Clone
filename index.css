@@ -41,9 +41,34 @@ main {
     margin: 0 10px;
 }
 
+.blink {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+    from {
+        color: white;
+    }
+
+    to {
+        color: transparent;
+    }
+}
+
 .blink1 {
-    color: yellow;
-    animation: blinker 1.5s linear infinite;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    from {
+        color: yellow;
+    }
+
+    to {
+        color: transparent;
+    }
 }
 
 .header_row1 {
@@ -66,7 +91,8 @@ img {
     padding: 5px;
 }
 
-.social_header {
+.social_header,
+.menuList {
     float: right;
     margin: 0;
 }
@@ -83,5 +109,35 @@ main {
 }
 
 #universityLogo {
-    width: 200px !important;
+    display: inline-block;
+    width: 250px !important;
+}
+
+.universityLogo {
+    display: inline;
+    padding: 0;
+}
+
+.menuList a {
+    color: #002147 !important;
+    font-weight: 500;
+    float: rigth;
+    padding: 33px 15px;
+}
+
+.menuList a:hover {
+    animation-name: color;
+    animation-duration: 1s;
+    color: #fcb900;
+    text-decoration: none;
+}
+
+@keyframes color {
+    from {
+        color: #002147;
+    }
+
+    to {
+        color: #fcb900;
+    }
 }
