@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University of Mumbai</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        ul.universityLogo {
+            display: inline;
+            width: 10%;
+            width: 200px !important;
+            padding: 0;
+            margin: 0 !important;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar" style="padding: 6px;">
             <nav>
-                <ul>
+                <ul class="nav" style="width: 1519px; height: 26px;">
                     <li><a href="#">OER</a></li>
                     <li><a href="#">NIRF 2023</a></li>
                     <li><a href="#">NAAC Report</a></li>
@@ -32,39 +41,54 @@
     </header>
 
     <main>
-        <div class="social">
-            <ul class="contact_header">
-                <li>
-                    <img src="./src/call.png" alt="call">
-                    <a href="#" class="contact_no">Kalina Campus: 022 26543000 Fort: 0222708700</a>
-                </li>
-            </ul>
+        <section class="navbar_content">
+            <div class="social">
+                <ul class="contact_header">
+                    <li>
+                        <img src="./src/call.png" alt="call">
+                        <a href="#" class="contact_no">Kalina Campus: 022 26543000 Fort: 0222708700</a>
+                    </li>
+                </ul>
 
-            <ul class="social_header">
-                <li><a href="#"><img src="./src/facebook-app-symbol.png" alt="facebook" class="facebook"></a></li>
-                <li><a href="#"><img src="./src/twitter.png" alt="twitter" class="twitter"></a></li>
-                <li><a href="#"><img src="./src/linkedin.png" alt="linkedin" class="linkedin"></a></li>
-                <li><a href="#"><img src="./src/social.png" alt="youtube" class="youtube"></a></li>
-            </ul>
+                <ul class="social_header">
+                    <li><a href="#"><img src="./src/facebook-app-symbol.png" alt="facebook" class="facebook"></a></li>
+                    <li><a href="#"><img src="./src/twitter.png" alt="twitter" class="twitter"></a></li>
+                    <li><a href="#"><img src="./src/linkedin.png" alt="linkedin" class="linkedin"></a></li>
+                    <li><a href="#"><img src="./src/social.png" alt="youtube" class="youtube"></a></li>
+                </ul>
+            </div>
+            <hr class="hr">
+            <div class="main_menu">
+                <ul class="universityLogo">
+                    <li><img src="./src/University-logo321.png" alt="University_logo" id="universityLogo"></li>
+                </ul>
+
+                <ul class="menuList" style="margin: 0px; padding: 33px 15px;">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">OFFICERS</a></li>
+                    <li><a href="#">EXAMINATION</a></li>
+                    <li><a href="#">SECTIONS</a></li>
+                    <li><a href="#">FACILITIES</a></li>
+                    <li><a href="#">STUDENTS</a></li>
+                    <li><a href="#">ACADEMICS</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+        </section class="main_content">
+        <div class="content">
+            <div class="slider">
+                <img src="https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg"
+                    alt="mumbai_university" id="university" style="width: 1519px; height: 625px;">
+            </div>
+            <!-- <div class="slider">
+                <img src="https://mu.ac.in/wp-content/uploads/2020/01/DSC_0021212.jpg" alt="mumbai_university"
+                    id="university1"> -->
         </div>
-        <hr>
-        <div class="main_menu">
-            <ul class="universityLogo">
-                <li><img src="./src/University-logo321.png" alt="University_logo" id="universityLogo"></li>
-            </ul>
-
-            <ul class="menuList">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">OFFICERS</a></li>
-                <li><a href="#">EXAMINATION</a></li>
-                <li><a href="#">SECTIONS</a></li>
-                <li><a href="#">FACILITIES</a></li>
-                <li><a href="#">STUDENTS</a></li>
-                <li><a href="#">ACADEMICS</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
+        </div>
+        <div class="our_ranking">
+            <h1>Our Rankings</h1>
         </div>
     </main>
 </body>

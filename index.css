@@ -5,6 +5,9 @@ html {
 body {
     font-family: Roboto, sans-serif;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -17,6 +20,7 @@ body {
 nav {
     display: inline-block;
     margin: 0% -1% 0% -1%;
+    padding: 10px;
 }
 
 ul li {
@@ -35,10 +39,6 @@ ul a {
 a:hover {
     text-decoration: underline;
     color: #fcb900;
-}
-
-main {
-    margin: 0 10px;
 }
 
 .blink {
@@ -104,25 +104,53 @@ img {
     padding: 2px;
 }
 
-main {
+.navbar_content {
     margin: 0 37px;
 }
 
-#universityLogo {
-    display: inline-block;
-    width: 250px !important;
+.universityLogo img {
+    display: inline;
+    width: 10%;
+    width: 200px !important;
+    padding: 0;
+    margin: 0 !important;
 }
 
-.universityLogo {
+/* .menuList {
     display: inline;
+    width: 85%;
+} */
+
+#universityLogo {
+    display: inline-block;
+    width: 200px !important;
+    padding: 0;
+    margin: 0;
+}
+
+.universityLogo ul {
+    display: inline;
+    margin: 0;
     padding: 0;
 }
 
+/* .main_menu {
+    margin: 0;
+    padding: 33px 15px;
+} */
+
+.main_menu img {
+    padding: 0;
+}
+
+/* ul.menuList a,  */
 .menuList a {
     color: #002147 !important;
     font-weight: 500;
     float: rigth;
     padding: 33px 15px;
+    font-weight: bold;
+    position: relative;
 }
 
 .menuList a:hover {
@@ -140,4 +168,21 @@ main {
     to {
         color: #fcb900;
     }
+}
+
+.main_content {
+    margin: -1px;
+}
+
+.content img {
+    width: 1519px;
+    margin: 0;
+    padding: 0;
+    height: 625px;
+    image-orientation: from-image;
+    background-size: cover;
+}
+
+.our_ranking {
+    text-align: center;
 }
