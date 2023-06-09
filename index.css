@@ -36,7 +36,8 @@ ul a {
     width: 100%;
 }
 
-a:hover {
+a:hover,
+.menuList a:hover {
     text-decoration: underline;
     color: #fcb900;
 }
@@ -153,12 +154,12 @@ img {
     position: relative;
 }
 
-.menuList a:hover {
+/* .menuList a:hover {
     animation-name: color;
     animation-duration: 1s;
     color: #fcb900;
     text-decoration: none;
-}
+} */
 
 @keyframes color {
     from {
@@ -183,6 +184,74 @@ img {
     background-size: cover;
 }
 
+/* .slider {
+    transition: width 1s ease-in-out 2s;
+} */
+
 .our_ranking {
     text-align: center;
+    width: 1519px;
+    padding: 0px 174.4px 0px 174.6px;
+    position: relative;
+    left: -174px;
+    background: #eaeaea;
+}
+
+.our_ranking img {
+    width: 230px;
+    height: 130px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 81px;
+    margin: 0px -15px 0px 180px;
+}
+
+.tag h3 {
+    background-color: #002147;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 535px;
+    height: 26px;
+}
+
+.about_us {
+    width: 261px;
+    height: 150px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about_img img {
+    display: block;
+    width: 300px;
+    height: 150px;
+    transition: 1s all ease-in-out;
+    z-index: 10;
+}
+
+.about_us img:hover {
+    transform: scale(1.2);
+
+}
+
+.about_img_text:after {
+    display: block;
+    position: absolute;
+
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
 }
