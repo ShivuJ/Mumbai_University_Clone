@@ -222,7 +222,8 @@ img {
     height: 26px;
 }
 
-.about_us {
+.about_us,
+.mission {
     width: 261px;
     height: 150px;
     position: relative;
@@ -231,7 +232,8 @@ img {
     border-radius: 10px;
 }
 
-.about_img img {
+.about_img img,
+.mission_img img {
     display: block;
     width: 300px;
     height: 150px;
@@ -239,19 +241,24 @@ img {
     z-index: 10;
 }
 
-.about_us img:hover {
+.about_us img:hover,
+.mission_img img:hover {
     transform: scale(1.2);
 
 }
 
-.about_img_text:after {
-    display: block;
+.about_img_text,
+.mission_img_text {
+    display: flex-block;
     position: absolute;
-
-    color: black;
+    text-align: center;
     font-size: 22px;
     font-weight: 500;
     line-height: 1.5;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     bottom: 0;
+    width: 261px;
+    height: 33px;
+    color: white;
+
 }
