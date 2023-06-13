@@ -184,9 +184,46 @@ img {
     background-size: cover;
 }
 
-/* .slider {
-    transition: width 1s ease-in-out 2s;
-} */
+.slider_nav {
+    width: 0.5px;
+    height: 0.5px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider {
+    /* background: url("https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg") no-repeat; */
+    animation: slider 20s infinite;
+    background-size: 1519px 625px;
+    width: 1519px;
+    height: 625px !important;
+    position: relative;
+}
+
+@keyframes slider {
+    0% {
+        /* background: url("https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg") no-repeat; */
+        left: 100%;
+        /* right: 100%; */
+        top: 0%;
+    }
+
+    50% {
+        /* background: url("https://mu.ac.in/wp-content/uploads/2020/01/BAJU98172.jpg") no-repeat; */
+        left: 100%;
+    }
+
+    100% {
+        /* background: url("https://mu.ac.in/wp-content/uploads/2020/01/DSC_0021212.jpg") no-repeat; */
+        left: 100%;
+    }
+
+    /* 100% {
+        background-image: url("https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg");
+    } */
+}
 
 .our_ranking {
     text-align: center;
@@ -195,6 +232,7 @@ img {
     position: relative;
     left: -174px;
     background: #eaeaea;
+    padding-top: 50px;
 }
 
 .our_ranking img {
@@ -222,8 +260,15 @@ img {
     height: 26px;
 }
 
+.aboutSection {
+    width: 1172px;
+    height: 479.600px;
+    text-align: center;
+}
+
 .about_us,
-.mission {
+.mission,
+.univesity {
     width: 261px;
     height: 150px;
     position: relative;
@@ -232,8 +277,22 @@ img {
     border-radius: 10px;
 }
 
+.about_mission,
+.university_section {
+    display: inline-block;
+    padding: 33px 15px;
+
+}
+
+/* .about_section,
+.mission_section,
+.university_section {
+    margin-bottom: 10px;
+} */
+
 .about_img img,
-.mission_img img {
+.mission_img img,
+.university_img {
     display: block;
     width: 300px;
     height: 150px;
@@ -242,7 +301,8 @@ img {
 }
 
 .about_us img:hover,
-.mission_img img:hover {
+.mission_img img:hover,
+.university_img:hover {
     transform: scale(1.2);
 
 }
@@ -260,5 +320,4 @@ img {
     width: 261px;
     height: 33px;
     color: white;
-
 }
