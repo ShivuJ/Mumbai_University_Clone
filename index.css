@@ -157,9 +157,9 @@ img {
 /* .menuList a:hover {
     animation-name: color;
     animation-duration: 1s;
-    color: #fcb900;
+    color: #002147;
     text-decoration: none;
-} */
+}
 
 @keyframes color {
     from {
@@ -169,7 +169,7 @@ img {
     to {
         color: #fcb900;
     }
-}
+} */
 
 .main_content {
     margin: -1px;
@@ -195,35 +195,14 @@ img {
 
 .slider {
     /* background: url("https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg") no-repeat; */
-    animation: slider 20s infinite;
+    animation: slide 10s infinite;
     background-size: 1519px 625px;
     width: 1519px;
     height: 625px !important;
     position: relative;
+    object-fit: cover;
 }
 
-@keyframes slider {
-    0% {
-        /* background: url("https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg") no-repeat; */
-        left: 100%;
-        /* right: 100%; */
-        top: 0%;
-    }
-
-    50% {
-        /* background: url("https://mu.ac.in/wp-content/uploads/2020/01/BAJU98172.jpg") no-repeat; */
-        left: 100%;
-    }
-
-    100% {
-        /* background: url("https://mu.ac.in/wp-content/uploads/2020/01/DSC_0021212.jpg") no-repeat; */
-        left: 100%;
-    }
-
-    /* 100% {
-        background-image: url("https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg");
-    } */
-}
 
 .our_ranking {
     text-align: center;
@@ -291,13 +270,20 @@ img {
 } */
 
 .about_img img,
-.mission_img img,
-.university_img {
+.mission_img img {
     display: block;
     width: 300px;
     height: 150px;
     transition: 1s all ease-in-out;
     z-index: 10;
+}
+
+.university_img {
+    display: block;
+    transition: 1s all ease-in-out;
+    z-index: 10;
+    width: 554px;
+    height: 342.6px;
 }
 
 .about_us img:hover,
