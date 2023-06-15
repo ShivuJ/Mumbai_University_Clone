@@ -154,22 +154,41 @@ img {
     position: relative;
 }
 
-/* .menuList a:hover {
-    animation-name: color;
-    animation-duration: 1s;
-    color: #002147;
-    text-decoration: none;
+.container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
 }
 
-@keyframes color {
-    from {
-        color: #002147;
+.slider_container {
+    display: flex;
+    width: calc(1519px * 3);
+    animation: scroll 40s linear infinite;
+    animation-delay: 10s;
+}
+
+.slider_image {
+    display: inline-block;
+    position: absolute;
+}
+
+/* .slider_nav {
+    width: 0.5px;
+    animation: scroll 40s linear infinite;
+    color: black;
+} */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
 
-    to {
-        color: #fcb900;
+    100% {
+        transform: translateX(-100%);
     }
-} */
+}
+
+
 
 .main_content {
     margin: -1px;
@@ -245,9 +264,13 @@ img {
     text-align: center;
 }
 
+.aboutUs {
+    display: flex;
+    justify-content: center;
+}
+
 .about_us,
-.mission,
-.univesity {
+.mission {
     width: 261px;
     height: 150px;
     position: relative;
@@ -256,8 +279,18 @@ img {
     border-radius: 10px;
 }
 
-.about_mission,
-.university_section {
+.univesity {
+    width: 554px;
+    height: 342.6px;
+    display: inline-block;
+    padding: 33px 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about_mission {
     display: inline-block;
     padding: 33px 15px;
 
@@ -272,8 +305,6 @@ img {
 .about_img img,
 .mission_img img {
     display: block;
-    width: 300px;
-    height: 150px;
     transition: 1s all ease-in-out;
     z-index: 10;
 }
@@ -295,7 +326,7 @@ img {
 
 .about_img_text,
 .mission_img_text {
-    display: flex-block;
+    display: flex-box;
     position: absolute;
     text-align: center;
     font-size: 22px;
@@ -303,7 +334,11 @@ img {
     line-height: 1.5;
     background: rgba(0, 0, 0, 0.5);
     bottom: 0;
-    width: 261px;
-    height: 33px;
     color: white;
+    object-fit: cover;
 }
+
+/* #university_info {
+    width: 554px;
+    height: 342.6px;
+} */
