@@ -224,6 +224,7 @@ img {
 
 
 .our_ranking {
+    margin: -1%;
     text-align: center;
     width: 1519px;
     padding: 0px 174.4px 0px 174.6px;
@@ -258,19 +259,34 @@ img {
     height: 26px;
 }
 
-.aboutSection {
+section.aboutSection {
+    display: inline-block;
+    width: 1172px;
+    height: 479.6px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .about_section,
+.university_section {
     width: 1172px;
     height: 479.600px;
     text-align: center;
-}
+} */
 
 .aboutUs {
     display: flex;
     justify-content: center;
+    padding-top: 33px;
+    position: absolute;
+    left: 13%;
 }
 
 .about_us,
-.mission {
+.mission,
+.vision,
+.organogram {
+    display: inline-block;
     width: 261px;
     height: 150px;
     position: relative;
@@ -283,18 +299,22 @@ img {
     width: 554px;
     height: 342.6px;
     display: inline-block;
-    padding: 33px 15px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.about_mission {
+.about_mission,
+.vision_organogram {
     display: inline-block;
-    padding: 33px 15px;
+    padding: 33px 15px 0;
+    width: 261px;
+    height: 320px;
 
 }
+
+
 
 /* .about_section,
 .mission_section,
@@ -303,39 +323,69 @@ img {
 } */
 
 .about_img img,
-.mission_img img {
-    display: block;
+.mission_img img,
+.vision_img img,
+.organogram_img img {
+    display: inline-block;
     transition: 1s all ease-in-out;
     z-index: 10;
+    filter: brightness(50%);
+    border-radius: 10px;
+    width: 261px;
+    height: 150px;
 }
 
-.university_img {
+/* .university_section img {
+    width: 554px;
+    height: 343px;
     display: block;
+    overflow: hidden;
+    border-radius: 10px;
+} */
+
+.university_img img {
+    display: inline-block;
     transition: 1s all ease-in-out;
     z-index: 10;
     width: 554px;
     height: 342.6px;
+    overflow: hidden;
+    filter: brightness(50%);
 }
 
 .about_us img:hover,
 .mission_img img:hover,
-.university_img:hover {
+.university_img img:hover,
+.vision_img img:hover,
+.organogram_img img:hover {
     transform: scale(1.2);
 
 }
 
 .about_img_text,
-.mission_img_text {
-    display: flex-box;
+.mission_img_text,
+.university_img_text,
+.vision_img_text,
+.organogram_img_text {
+    display: flexbox;
     position: absolute;
     text-align: center;
     font-size: 22px;
     font-weight: 500;
     line-height: 1.5;
-    background: rgba(0, 0, 0, 0.5);
-    bottom: 0;
     color: white;
     object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+    width: 554px;
+    height: 26px;
+}
+
+.university_subtitle {
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 /* #university_info {
