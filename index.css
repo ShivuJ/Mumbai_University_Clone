@@ -277,7 +277,6 @@ section.aboutSection {
 .aboutUs {
     display: flex;
     justify-content: center;
-    padding-top: 33px;
     position: absolute;
     left: 13%;
 }
