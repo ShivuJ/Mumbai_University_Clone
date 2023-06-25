@@ -188,54 +188,45 @@ img {
     }
 }
 
-
-
-.main_content {
-    margin: -1px;
-}
-
-.content img {
-    width: 1519px;
-    margin: 0;
-    padding: 0;
-    height: 625px;
-    image-orientation: from-image;
-    background-size: cover;
-}
-
-.slider_nav {
-    width: 0.5px;
-    height: 0.5px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider {
-    /* background: url("https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg") no-repeat; */
-    animation: slide 10s infinite;
-    background-size: 1519px 625px;
-    width: 1519px;
-    height: 625px !important;
-    position: relative;
-    object-fit: cover;
-}
-
-
 .our_ranking {
-    margin: -1%;
+    margin: -1% 0;
     text-align: center;
-    width: 1519px;
+    width: 1140px;
     padding: 0px 174.4px 0px 174.6px;
     position: relative;
-    left: -174px;
+    /* left: 45px; */
     background: #eaeaea;
     padding-top: 50px;
 }
 
+.partner {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.our_ranking div.partner1 {
+    display: flex;
+    margin: -1px;
+    animation: scroll1 10s linear infinite;
+    width: 270px !important;
+    height: 130px !important;
+    padding: 15px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 .our_ranking img {
-    width: 230px;
+    width: 270px;
     height: 130px;
 }
 
@@ -259,7 +250,7 @@ img {
     height: 26px;
 }
 
-section.aboutSection {
+section#aboutSection {
     display: inline-block;
     width: 1172px;
     height: 479.6px;
@@ -279,6 +270,7 @@ section.aboutSection {
     justify-content: center;
     position: absolute;
     left: 13%;
+    padding-top: 33px;
 }
 
 .about_us,
@@ -294,6 +286,11 @@ section.aboutSection {
     border-radius: 10px;
 }
 
+/* .mission img,
+.organogram img {
+    padding-top: 10px;
+} */
+
 .univesity {
     width: 554px;
     height: 342.6px;
@@ -307,7 +304,7 @@ section.aboutSection {
 .about_mission,
 .vision_organogram {
     display: inline-block;
-    padding: 33px 15px 0;
+    padding: 0 15px 0;
     width: 261px;
     height: 320px;
 
@@ -358,7 +355,6 @@ section.aboutSection {
 .vision_img img:hover,
 .organogram_img img:hover {
     transform: scale(1.2);
-
 }
 
 .about_img_text,
@@ -391,3 +387,8 @@ section.aboutSection {
     width: 554px;
     height: 342.6px;
 } */
+
+.vc_desk {
+    margin: 200px;
+    float: left;
+}
