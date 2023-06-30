@@ -139,6 +139,13 @@ img {
     margin: 0;
     padding: 33px 15px;
 } */
+/* .main_menu {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    position: relative;
+} */
 
 .main_menu img {
     padding: 0;
@@ -391,7 +398,7 @@ section#aboutSection {
 
 .vcs_desk {
     position: relative;
-    width: 1170px;
+    width: 1200px;
     height: 685.8px;
     padding: 0 174px;
     left: 23px;
@@ -451,9 +458,42 @@ h3 {
 .notifications {
     display: inline-block;
     width: 585px;
-    height: 685.8px !important;
+    height: 690.400 !important;
+    position: absolute;
 }
 
 .notifications h2 {
     width: 585px;
+}
+
+.notification_text {
+    background-color: #002147;
+    width: 585px;
+    height: 585px;
+    border-radius: 30px;
+    padding-right: 30px;
+}
+
+.notification_text ul {
+    display: block;
+    color: white;
+    list-style-type: disc !important;
+    width: 555px;
+    height: 500px;
+    position: relative;
+    animation: scrollDown 20s ease-in-out infinite;
+}
+
+.notification_text ul:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
