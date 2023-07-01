@@ -464,6 +464,7 @@ h3 {
 
 .notifications h2 {
     width: 585px;
+    font-size: 28px;
 }
 
 .notification_text {
@@ -472,6 +473,8 @@ h3 {
     height: 585px;
     border-radius: 30px;
     padding-right: 30px;
+    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .notification_text ul {
