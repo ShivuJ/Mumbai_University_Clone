@@ -460,6 +460,7 @@ h3 {
     width: 585px;
     height: 690.400 !important;
     position: absolute;
+    overflow: hidden;
 }
 
 .notifications h2 {
@@ -499,4 +500,72 @@ h3 {
     100% {
         transform: translateY(0%);
     }
+}
+
+.event_list {
+    position: absolute;
+    width: 1200px;
+    height: 685.8px;
+    padding: 0 174px;
+    left: 23px;
+    right: 174px;
+    margin: 0 -15px;
+    background-color: #e8e8e8;
+    overflow: hidden;
+}
+
+.announcement,
+.events {
+    display: inline-block;
+    width: 555px;
+    height: 596px;
+    padding: 35px 15px 0;
+    align-items: center;
+}
+
+.announcement_title,
+.events_title {
+    background-color: #002147;
+    color: #fff;
+    width: 535px;
+    height: 31px;
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.announcement ul,
+.events ul {
+    width: 549px;
+    height: 400px;
+    position: relative;
+    animation: scrollDown 20s ease-in-out infinite;
+    padding: 0;
+}
+
+.announcement ul:hover,
+.events ul:hover {
+    animation-play-state: paused;
+}
+
+.announcement li:hover,
+.events li:hover {
+    color: #ff9900;
+}
+
+.facilities {
+    margin-top: 800px;
+    width: 1170px;
+    height: 1079.6px;
+    padding: 0 174px;
+    left: 23px;
+    right: 174px;
+    margin: 0 -15px;
+}
+
+.fac_title {
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
 }
