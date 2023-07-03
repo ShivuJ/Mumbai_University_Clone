@@ -521,6 +521,7 @@ h3 {
     height: 596px;
     padding: 35px 15px 0;
     align-items: center;
+    text-align: justify;
 }
 
 .announcement_title,
@@ -540,7 +541,7 @@ h3 {
     width: 549px;
     height: 400px;
     position: relative;
-    animation: scrollDown 20s ease-in-out infinite;
+    animation: scrollDown 15s ease-in-out infinite;
     padding: 0;
 }
 
@@ -555,17 +556,38 @@ h3 {
 }
 
 .facilities {
-    margin-top: 800px;
     width: 1170px;
     height: 1079.6px;
-    padding: 0 174px;
+    /* padding: 0 174px; */
     left: 23px;
     right: 174px;
     margin: 0 -15px;
+    position: absolute;
+    margin-top: 670px;
+    left: 15%;
 }
 
-.fac_title {
+.fac_title h3 {
+    width: 1140px;
+    height: 60px;
     font-size: 30px;
     align-items: center;
     text-align: center;
+}
+
+.facility {
+    text-align: center;
+}
+
+.facility a {
+    border: 1px solid grey;
+    padding: 10px 30px;
+    font: 16px;
+    text-decoration: none;
+
+}
+
+.facility a:active {
+    background-color: #002147;
+    color: white;
 }
