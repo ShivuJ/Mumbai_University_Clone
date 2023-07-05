@@ -20,17 +20,6 @@
             width: 261px;
             height: 320px;
         }
-
-        .notification_text li {
-            color: white;
-            list-style-type: disc !important;
-            width: 555px;
-            height: 500px;
-        }
-
-        .notification_list li {
-            list-style-type: disc;
-        }
     </style>
 </head>
 
@@ -38,7 +27,7 @@
     <header>
         <div class="navbar" style="padding: 6px;">
             <nav>
-                <ul class="nav" style="width: 1525px; height: 26px;">
+                <ul class="nav" style="width: 1525px; height: 26px;" id="nav">
                     <li><a href="#">OER</a></li>
                     <li><a href="#">NIRF 2023</a></li>
                     <li><a href="#">NAAC Report</a></li>
@@ -60,14 +49,14 @@
     <main>
         <section class="navbar_content">
             <div class="social">
-                <ul class="contact_header">
+                <ul class="contact_header" id="header_logo">
                     <li>
                         <img src="./src/call.png" alt="call">
                         <a href="#" class="contact_no">Kalina Campus: 022 26543000 Fort: 0222708700</a>
                     </li>
                 </ul>
 
-                <ul class="social_header">
+                <ul class="social_header" id="header">
                     <li><a href="#"><img src="./src/facebook-app-symbol.png" alt="facebook" class="facebook"></a></li>
                     <li><a href="#"><img src="./src/twitter.png" alt="twitter" class="twitter"></a></li>
                     <li><a href="#"><img src="./src/linkedin.png" alt="linkedin" class="linkedin"></a></li>
@@ -76,11 +65,11 @@
             </div>
             <hr class="hr">
             <div class="main_menu">
-                <ul class="universityLogo">
+                <ul class="universityLogo" id="main_logo">
                     <li><img src="./src/University-logo321.png" alt="University_logo" id="universityLogo"></li>
                 </ul>
 
-                <ul class="menuList" style="margin: 0px; padding: 33px 15px;">
+                <ul class="menuList" style="margin: 0px; padding: 33px 15px;" id="main">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#aboutSection">ABOUT US</a></li>
                     <li><a href="#">OFFICERS</a></li>
@@ -93,78 +82,80 @@
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
             </div>
-        </section class="main_content">
-        <div class="slider_container">
-            <div class="slider_img">
-                <img src="https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg"
-                    alt="mumbai_university" id="university" style="width: 1519px; height: 625px;">
-            </div>
-            <div class="slider_img">
-                <img src="https://mu.ac.in/wp-content/uploads/2020/01/BAJU98172.jpg" alt="mumbai_university"
-                    id="university2" style="width: 1519px; height: 625px;">
-            </div>
-            <div class="slider_img">
-                <img src="https://mu.ac.in/wp-content/uploads/2020/01/DSC_0021212.jpg" alt="mumbai_university"
-                    id="university3" style="width: 1519px; height: 625px;">
-            </div>
-            <div class="slider_img">
-                <img src="https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg"
-                    alt="mumbai_university" id="university4" style="width: 1519px; height: 625px;">
-            </div>
-            <div class="slider_img">
-                <img src="https://mu.ac.in/wp-content/uploads/2020/01/BAJU98172.jpg" alt="mumbai_university"
-                    id="university5" style="width: 1519px; height: 625px;">
-            </div>
-            <div class="slider_img">
-                <img src="https://mu.ac.in/wp-content/uploads/2020/01/DSC_0021212.jpg" alt="mumbai_university"
-                    id="university6" style="width: 1519px; height: 625px;">
-            </div>
+        </section>
+        <section class="main_content">
+            <div class="slider_container">
+                <div class="slider_img">
+                    <img src="https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg"
+                        alt="mumbai_university" id="university" style="width: 1519px; height: 625px;">
+                </div>
+                <div class="slider_img">
+                    <img src="https://mu.ac.in/wp-content/uploads/2020/01/BAJU98172.jpg" alt="mumbai_university"
+                        id="university2" style="width: 1519px; height: 625px;">
+                </div>
+                <div class="slider_img">
+                    <img src="https://mu.ac.in/wp-content/uploads/2020/01/DSC_0021212.jpg" alt="mumbai_university"
+                        id="university3" style="width: 1519px; height: 625px;">
+                </div>
+                <!-- <div class="slider_img">
+                    <img src="https://mu.ac.in/wp-content/uploads/2019/01/MumbaiUniversity4-600x338.jpg"
+                        alt="mumbai_university" id="university4" style="width: 1519px; height: 625px;">
+                </div>
+                <div class="slider_img">
+                    <img src="https://mu.ac.in/wp-content/uploads/2020/01/BAJU98172.jpg" alt="mumbai_university"
+                        id="university5" style="width: 1519px; height: 625px;">
+                </div>
+                <div class="slider_img">
+                    <img src="https://mu.ac.in/wp-content/uploads/2020/01/DSC_0021212.jpg" alt="mumbai_university"
+                        id="university6" style="width: 1519px; height: 625px;">
+                </div> -->
 
-        </div>
-        <div class="slider_nav">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        </div>
-        <div class="our_ranking">
-            <h1 style="margin: -1px">Our Rankings</h1>
-            <div class="partner">
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2021/09/nirf-1.png" alt="partner1">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2021/10/ariia_logo.png" alt="partner2">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2019/01/wnr.png" alt="partner3">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2021/09/naac_final-300x142.png" alt="partner4">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2019/06/the.png" alt="partner5">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2021/09/nirf-1.png" alt="partner1">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2021/10/ariia_logo.png" alt="partner2">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2019/01/wnr.png" alt="partner3">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2021/09/naac_final-300x142.png" alt="partner4">
-                </div>
-                <div class="partner1">
-                    <img src="https://mu.ac.in/wp-content/uploads/2019/06/the.png" alt="partner5">
+            </div>
+            <!-- <div class="slider_nav">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> -->
+        </section>
+        <section class="ranking">
+            <div class="our_ranking">
+                <h1 style="margin: -1px">Our Rankings</h1>
+                <div class="partner">
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2021/09/nirf-1.png" alt="partner1">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2021/10/ariia_logo.png" alt="partner2">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2019/01/wnr.png" alt="partner3">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2021/09/naac_final-300x142.png" alt="partner4">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2019/06/the.png" alt="partner5">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2021/09/nirf-1.png" alt="partner1">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2021/10/ariia_logo.png" alt="partner2">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2019/01/wnr.png" alt="partner3">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2021/09/naac_final-300x142.png" alt="partner4">
+                    </div>
+                    <div class="partner1">
+                        <img src="https://mu.ac.in/wp-content/uploads/2019/06/the.png" alt="partner5">
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
         <section id="aboutSection">
             <div class="aboutUsSection">
                 <div class="tag">
@@ -265,15 +256,17 @@
                     Latest News
                 </h2>
                 <div class="notification_text">
-                    <ul class="notification_list">
+                    <ul id="notification_list">
                         <li>
                             <p>Revised Admission Circular 2023</p>
                         </li>
                         <li>
-                            <p>प्रवेश प्रक्रीया शैक्षणिक वर्ष २०२३-२४ मध्ये महाविद्यालयांची नावे समाविष्ट करणेबाबत</p>
+                            <p>प्रवेश प्रक्रीया शैक्षणिक वर्ष २०२३-२४ मध्ये महाविद्यालयांची नावे समाविष्ट करणेबाबत
+                            </p>
                         </li>
                         <li>
-                            <p>Circular for last date of submission Eligibility, Enrollment form for the A.Y. 2022-23
+                            <p>Circular for last date of submission Eligibility, Enrollment form for the A.Y.
+                                2022-23
                             </p>
                         </li>
                         <li>
@@ -293,7 +286,8 @@
                         <li>
                             <p>विभागप्रमुख, शिक्षणशास्र विद्याशाखा व शारीरिक शिक्षणशास्र विद्याशाखा सर्व अकृषी
                                 विद्यापीठे
-                                आणि सुकाणू समिती, राष्टीय शैक्षणिक धोरण यांची संयुक्त बैठक दिनांक २ व ३ जून रोजी आयोजित
+                                आणि सुकाणू समिती, राष्टीय शैक्षणिक धोरण यांची संयुक्त बैठक दिनांक २ व ३ जून रोजी
+                                आयोजित
                                 करण्याबाबत.</p>
                         </li>
                         <li>
@@ -303,7 +297,8 @@
                             <p>Second Year Admission Circular 203-24</p>
                         </li>
                         <li>
-                            <p>Revised Circular for reschedule Workshop has been organised to demonstrate the procedure
+                            <p>Revised Circular for reschedule Workshop has been organised to demonstrate the
+                                procedure
                                 and
                                 method to be followed during Online Admission, while accepting and submitting the
                                 Enrolment
@@ -312,7 +307,8 @@
                         <li>
                             <p>Workshop has been organised to demonstrate the procedure and method to be followed
                                 during
-                                Online Admission, while accepting and submitting the Enrolment and Eligibility forms for
+                                Online Admission, while accepting and submitting the Enrolment and Eligibility forms
+                                for
                                 the
                                 Academic Year 2023-2024</p>
                         </li>
@@ -342,27 +338,24 @@
             <div class="announcement">
                 <div class="announments">
                     <h3 class="announcement_title">Important Announcements</h3>
-                    <ul>
+                    <ul id="announcement">
                         <li>
-                            <p>M.Sc. (Finance) Admission Notification - AY 2023-24 - Alkesh Dinesh Mody Institute for
+                            <p>M.Sc. (Finance) Admission Notification - AY 2023-24 - Alkesh Dinesh Mody Institute
+                                for
                                 Financial and Management Studies</p>
                         </li>
                         <li>
                             <p>
                                 Revised FYBMS Admission Notification 2023-24 - Alkesh Dinesh Mody Institute for
-                                Financial
-                                and Management Studies
+                                Financial and Management Studies
                             </p>
                         </li>
                         <li>
                             <p>
                                 Western Regional Instrumentation Centre: Workshop on Silicon Solar Cells and Modules
-                                (Due to
-                                unavoidable circumstances the workshop on "Silicon Solar Cells and Modules" dated 12th
-                                -16th
-                                June, 2023 is postponed for the time being. The new dates will be announced in due
-                                course of
-                                time)
+                                (Due to unavoidable circumstances the workshop on "Silicon Solar Cells and Modules"
+                                dated 12th-16th June, 2023 is postponed for the time being. The new dates will be
+                                announced in due course of time)
                             </p>
                         </li>
                         <li>
@@ -379,26 +372,31 @@
                             <p>Department of Library Information Science: Ph.D. Admission Notification 2022-2023</p>
                         </li>
                         <li>
-                            <p>Alkesh Dinesh Mody Institute For Financial &amp; Management Studies (ADMI): Final Merit
+                            <p>Alkesh Dinesh Mody Institute For Financial &amp; Management Studies (ADMI): Final
+                                Merit
                                 List
-                                After Counseling for Admission Against Vacant Seats FYMMS (after all CAP rounds of DTE)
+                                After Counseling for Admission Against Vacant Seats FYMMS (after all CAP rounds of
+                                DTE)
                             </p>
                         </li>
                         <li>
                             <p>Alkesh Dinesh Mody Institute For Financial &amp; Management Studies (ADMI): DETAILED
                                 SCHEDULE
-                                FOR FYMMS ADMISSION AGAINST VACANT SEATS ACADEMIC YEAR 2022-23 (ADMI/MMS/698/2022) DATED
+                                FOR FYMMS ADMISSION AGAINST VACANT SEATS ACADEMIC YEAR 2022-23 (ADMI/MMS/698/2022)
+                                DATED
                                 16/11/2022</p>
                         </li>
                         <li>
-                            <p>Mumbai Münster Institute of Advanced Studies (MMIAS): Applications invited for internship
+                            <p>Mumbai Münster Institute of Advanced Studies (MMIAS): Applications invited for
+                                internship
                                 at
                                 the Mumbai Münster Institute of Advanced Studies (MMIAS)</p>
                         </li>
                         <li>
                             <p>Alkesh Dinesh Mody Institute for Financial and Management Studies: AY 2022-23 -
                                 Applications
-                                are invited for the MMS Program (Vacant Seats after all CAP Rounds) - Alkesh Dinesh Mody
+                                are invited for the MMS Program (Vacant Seats after all CAP Rounds) - Alkesh Dinesh
+                                Mody
                                 Institute for Financial and Management Studies, University of Mumbai</p>
                         </li>
                         <li>
@@ -408,13 +406,16 @@
                             <p>Department of Law: LL.M. Application Form 2022-23 - Google form</p>
                         </li>
                         <li>
-                            <p>Alkesh Dinesh Mody Institute for Financial and Management Studies: Placement drive for
+                            <p>Alkesh Dinesh Mody Institute for Financial and Management Studies: Placement drive
+                                for
                                 persons with disability at 'Amazon’ - Organized by Alkesh Dinesh Mody Institute for
-                                Financial and Management Studies, Garware Institute of Career Education and Development
+                                Financial and Management Studies, Garware Institute of Career Education and
+                                Development
                                 (GICED) and ‘Youth for Jobs’ (Y4J) - September 22, 2022</p>
                         </li>
                         <li>
-                            <p>Alkesh Dinesh Mody Institute for Financial and Management Studies: Notice of Reopening of
+                            <p>Alkesh Dinesh Mody Institute for Financial and Management Studies: Notice of
+                                Reopening of
                                 Ph.D. Admission portal to grant opportunity to the candidates who appeared for
                                 University of
                                 Mumbai PET in August 2022 (17 to 23 September 2022)</p>
@@ -431,29 +432,38 @@
 
             <div class="events">
                 <h3 class="events_title">Upcoming Events</h3>
-                <ul>
+                <ul id="events">
                     <li>
-                        <p>Western Regional Instrumentation Centre: Workshop on Silicon Solar Cells and Modules (Due to
-                            unavoidable circumstances the workshop on "Silicon Solar Cells and Modules" dated 12th -16th
-                            June, 2023 is postponed for the time being. The new dates will be announced in due course of
+                        <p>Western Regional Instrumentation Centre: Workshop on Silicon Solar Cells and Modules (Due
+                            to
+                            unavoidable circumstances the workshop on "Silicon Solar Cells and Modules" dated 12th
+                            -16th
+                            June, 2023 is postponed for the time being. The new dates will be announced in due
+                            course of
                             time)</p>
                     </li>
                     <li>
-                        <p>University of Mumbai Law Academy: University of Mumbai Law Academy Conference Brochure 2023
+                        <p>University of Mumbai Law Academy: University of Mumbai Law Academy Conference Brochure
+                            2023
                         </p>
                     </li>
                     <li>
-                        <p>Indian Council of Social Science Research an Western Region Center: Book Review Discussion
+                        <p>Indian Council of Social Science Research an Western Region Center: Book Review
+                            Discussion
                         </p>
                     </li>
                     <li>
-                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS | Book Launch of Homeland, the
-                            English Translation by Nilufer E. Bharucha of Dalpat Chauhan's Malak on 6 April 2023 | 10:00
+                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS | Book Launch of Homeland,
+                            the
+                            English Translation by Nilufer E. Bharucha of Dalpat Chauhan's Malak on 6 April 2023 |
+                            10:00
                             am - 11:30 am</p>
                     </li>
                     <li>
-                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS | One Day Hybrid International
-                            Symposium on Translations: Bridging Linguistic, Social and Political Divides on 6 April 2023
+                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS | One Day Hybrid
+                            International
+                            Symposium on Translations: Bridging Linguistic, Social and Political Divides on 6 April
+                            2023
                             | 10:00 am - 5:00 pm</p>
                     </li>
                     <li>
@@ -463,8 +473,10 @@
                         <p>Department of Physical Education: National seminar cum workshop - 2023</p>
                     </li>
                     <li>
-                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS Lecture Series 2023 | Thinking
-                            Decolonially Through a Feminist Intersectional Lens by Professor Avtar Brah | 15 March 2023
+                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS Lecture Series 2023 |
+                            Thinking
+                            Decolonially Through a Feminist Intersectional Lens by Professor Avtar Brah | 15 March
+                            2023
                             at 3:00 PM IST/9:30 AM London, UK</p>
                     </li>
                     <li>
@@ -474,13 +486,16 @@
                         <p>Department of Physical Education: CANTHON for all PHYSICAL EDUCATION</p>
                     </li>
                     <li>
-                        <p>Collaborative conference of Indian Society for Training &amp; Development (Mumbai Chapter)
-                            with Alkesh Dinesh Mody Institute of Financial and Management Studies - 3rd and 4th March
+                        <p>Collaborative conference of Indian Society for Training &amp; Development (Mumbai
+                            Chapter)
+                            with Alkesh Dinesh Mody Institute of Financial and Management Studies - 3rd and 4th
+                            March
                             2023 - Theme of Conference ' LEARNING AND DEVELOPMENT- A STRATEGIC CHOICE'</p>
                     </li>
                     <li>
                         <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS Lecture Series | Re-imagining
-                            early 20th century South Asian Migration to the United States by Professor Nalini Iyer on 1
+                            early 20th century South Asian Migration to the United States by Professor Nalini Iyer
+                            on 1
                             March 2023 at 9:00 AM IST / 7:30 PM in Seattle, USA</p>
                     </li>
                     <li>
@@ -493,11 +508,13 @@
                     </li>
                     <li>
                         <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS Lecture Series | Diaspora and
-                            Identity: The Case of Indian Music in the Caribbean by Professor Ajaya Sahoo | 17 February
+                            Identity: The Case of Indian Music in the Caribbean by Professor Ajaya Sahoo | 17
+                            February
                             2023 at 3:00 PM IST</p>
                     </li>
                     <li>
-                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS Lecture Series | Challenges of
+                        <p>Mumbai Münster Institute of Advanced Studies (MMIAS): MMIAS Lecture Series | Challenges
+                            of
                             Migration and Citizenship: African Americans and Asian Americans, 1850-1925 by Professor
                             Amritjit Singh | 15 February 2023 at 2 PM IST</p>
                     </li>
@@ -509,11 +526,11 @@
                 <h3>Our Facilities</h3>
             </div>
             <div class="facility">
-                <a href="#">All</a>
-                <a href="#">Campus Regions</a>
-                <a href="#">Health Centre</a>
-                <a href="#">Hostels</a>
-                <a href="#">Sports Complex</a>
+                <a href="#"><input type="button" value="All"></a>
+                <a href="#"><input type="button" value="Campus Regions"></a>
+                <a href="#"><input type="button" value="Health Centre"></a>
+                <a href="#"><input type="button" value="Hostels"></a>
+                <a href="#"><input type="button" value="Sports Complex"></a>
             </div>
         </section>
     </main>
