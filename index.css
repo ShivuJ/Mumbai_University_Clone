@@ -2,12 +2,19 @@ html {
     display: contents;
 }
 
+/* @media all and (max-width: 991px) {
+    body {
+        position: relative;
+    }
+} */
+
 body {
     font-family: Roboto, sans-serif;
     font-size: 15px;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-weight: 500px;
 }
 
 .navbar {
@@ -175,7 +182,7 @@ img {
     display: flex;
     position: relative;
     width: calc(1519px * 3);
-    animation: scroll 10s alternate infinite;
+    animation: scroll 10s linear infinite;
     animation-play-state: running;
     /* animation-delay: 10s; */
 }
@@ -183,6 +190,18 @@ img {
 .slider_image {
     display: inline;
     float: left;
+}
+
+.title,
+.subTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 81px;
+    margin: 0px -15px 0px 180px;
+    z-index: -1;
+    position: relative;
 }
 
 /* .slider_nav {
@@ -193,36 +212,36 @@ img {
 
 @keyframes scroll {
     0% {
-        right: 0%;
+        left: 0%;
     }
 
     20% {
-        right: 0%;
+        left: 0%;
     }
 
     25% {
-        right: -100%;
+        left: -100%;
     }
 
     45% {
-        right: -100%;
+        left: -100%;
     }
 
     50% {
-        right: -200%;
+        left: -200%;
     }
 
     70% {
-        right: -200%;
+        left: -200%;
     }
 
-    75% {
-        right: -300%;
+    85% {
+        left: -200%;
     }
 
-    95% {
-        right: -300%;
-    }
+    /* 95% {
+        left: -200%;
+    } */
 
     /* 80% {
         right: 0px;
@@ -233,7 +252,7 @@ img {
     } */
 
     100% {
-        right: -400%;
+        left: 0%;
     }
 }
 
@@ -257,7 +276,7 @@ img {
 .our_ranking div.partner1 {
     display: flex;
     margin: -1px;
-    animation: scroll1 10s linear infinite;
+    animation: scroll1 10s ease infinite;
     width: 270px !important;
     height: 130px !important;
     padding: 15px;
@@ -265,6 +284,7 @@ img {
 }
 
 @keyframes scroll1 {
+
     0% {
         transform: translateX(0);
     }
@@ -272,6 +292,7 @@ img {
     100% {
         transform: translateX(-100%);
     }
+
 }
 
 .our_ranking img {
@@ -637,7 +658,7 @@ h3 {
     text-align: center;
 }
 
-.facility input[type="button"] {
+/* .facility input[type="button"] {
     border: 1px solid grey;
     background-color: transparent;
     padding: 10px 30px;
@@ -648,4 +669,53 @@ h3 {
 input[type="button"]:checked {
     background-color: #002147;
     color: white;
+} */
+
+#button1 {
+    background-color: #002147;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    border: 1px solid #e0e0e0;
+}
+
+.button {
+    background-color: transparent;
+    color: #002147;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    border: 1px solid #e0e0e0;
+}
+
+.cards {
+    width: 293px;
+    height: 297px;
+    /* text-align: justify; */
+    box-shadow: 10px;
+}
+
+.card img {
+    height: 166px;
+    width: 263px;
+    padding-top: 45px;
+}
+
+.card a {
+    display: inline-block;
+    font: 18px;
+    text-decoration: none;
+    width: 223px;
+    height: 60px;
+    line-height: 1.4;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: -5px;
+}
+
+.card h3 {
+    margin: 0;
 }
