@@ -691,20 +691,29 @@ input[type="button"]:checked {
     border: 1px solid #e0e0e0;
 }
 
-.cards {
-    width: 293px;
-    height: 297px;
-    /* text-align: justify; */
-    box-shadow: 10px;
+#button1:hover,
+.button:hover {
+    background-color: #002147;
+    color: #fcb900;
 }
 
-.card img {
+.card {
+    display: inline-block;
+    width: 263px;
+    height: 266px;
+    box-shadow: 2px 2px 10px grey;
+    margin: 45px 13px 0;
+    position: relative;
+    float: left;
+}
+
+.cardImg img {
     height: 166px;
     width: 263px;
-    padding-top: 45px;
+
 }
 
-.card a {
+.cardTitle a {
     display: inline-block;
     font: 18px;
     text-decoration: none;
@@ -712,10 +721,14 @@ input[type="button"]:checked {
     height: 60px;
     line-height: 1.4;
     padding: 20px;
-    border: 1px solid black;
     margin-top: -5px;
 }
 
 .card h3 {
     margin: 0;
+}
+
+.alumni {
+    width: 1409px;
+    height: 400px;
 }
