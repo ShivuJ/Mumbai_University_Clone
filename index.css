@@ -710,7 +710,6 @@ input[type="button"]:checked {
 .cardImg img {
     height: 166px;
     width: 263px;
-
 }
 
 .cardTitle a {
@@ -728,11 +727,34 @@ input[type="button"]:checked {
     margin: 0;
 }
 
-.alumni {
+.alumniSection {
+    display: inline-block;
     position: absolute;
     margin-top: 1850px;
-    width: 1409px;
-    height: 400px;
+    width: 1519px;
+    height: 550px;
+    padding: 35px 15px 0;
+    align-items: center;
+    margin-left: 125px;
+}
+
+.alumni {
+    width: 1519px;
+    height: 365px;
+}
+
+.slideImg {
+    overflow: hidden;
+    position: relative;
+}
+
+.slideCard {
+    display: inline-block;
+    width: 275px;
+    height: 270px;
+    margin: 0;
+    position: absolute;
+    animation: slideAnimation 8s infinite;
 }
 
 .alumni h1 {
@@ -745,4 +767,68 @@ input[type="button"]:checked {
 .slideImg img {
     width: 275px;
     height: 275px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
 }
+
+.slideTitle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.slideCard:active {
+    animation: slideAnimation 8s infinite;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* .arrowImg {
+    padding-bottom: 120px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.prev {
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+} */
